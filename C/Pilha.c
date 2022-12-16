@@ -47,48 +47,43 @@ void imprimir(pilha *p){
 		printf("Pilha vazia\n");
 		return;
 	}else{
-		while(novoNo != NULL){
-			printf("PILHA: \n");
+		printf("FILA: \n");
+		while(novoNo){
 			printf("%d", novoNo->valor);
-			novoNo = novoNo->valor;
+			novoNo = novoNo->proximo;
+			printf("\n");
 		}
-		printf("\n");
+		
 	}
 }
 
 int main(){
-	
-	pilha *p1 = (pilha*) malloc(sizeof(pilha));
-	if(p1 == NULL){
-		printf("erro ao empilhar\n");
-		exit(0);
-	}else{
-		inicializaPilha(p1);
-		int opcao = 9;
-		int numero;
-		do{
-			printf("informe a operacao que deseja realizar\n");
-			printf("1 - Empilhar\n");
-			printf("2 - Desempilhar\n");
-			printf("3 - Imprimir\n");
-			printf("0 - Sair\n");
-			scanf("%d", &opcao);
-			
-			switch(opcao){
-				case 1:
-					printf("informe informe o numero para empilhar\n");
-					scanf("%d", &numero);
-					empilhar(numero, p1);
-					break;
-				case 2:
-					desempilhar(p1);
-					break;
-				case 3: 
-					imprimir(p1);
+	pilha p1;
+
+	int opcao, numero;
+	do{
+		printf("informe a operacao que deseja realizar\n");
+		printf("1 - Empilhar\n");
+		printf("2 - Desempilhar\n");
+		printf("3 - Imprimir\n");
+		printf("0 - Sair\n");
+		scanf("%d", &opcao);
+		
+		switch(opcao){
+			case 1:
+				printf("informe informe o numero para empilhar\n");
+				scanf("%d", &numero);
+				empilhar(numero, &p1);
 				break;
-			}
-		}while(opcao != 0);
-	}	
+			case 2:
+				desempilhar(&p1);
+				break;
+			case 3: 
+				imprimir(&p1);
+			break;
+		}
+	}while(opcao != 0);
+	
 	
 }
 
