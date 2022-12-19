@@ -11,10 +11,6 @@ typedef struct pilha{
 	node *topo;
 }pilha;
 
-void inicializaPilha(pilha *p){
-	p->topo = NULL;
-}
-
 void empilhar(int valor, pilha *p){
 	node *novoNo = (node*) malloc(sizeof(node));
 	if(novoNo == NULL){
@@ -58,8 +54,10 @@ void imprimir(pilha *p){
 }
 
 int main(){
-	pilha p1;
+	pilha *p1 = (pilha*)malloc(sizeof(pilha));
+	p1->topo = NULL;
 
+	
 	int opcao, numero;
 	do{
 		printf("informe a operacao que deseja realizar\n");
@@ -73,13 +71,13 @@ int main(){
 			case 1:
 				printf("informe informe o numero para empilhar\n");
 				scanf("%d", &numero);
-				empilhar(numero, &p1);
+				empilhar(numero, p1);
 				break;
 			case 2:
-				desempilhar(&p1);
+				desempilhar(p1);
 				break;
 			case 3: 
-				imprimir(&p1);
+				imprimir(p1);
 			break;
 		}
 	}while(opcao != 0);
