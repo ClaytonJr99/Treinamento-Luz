@@ -1,96 +1,96 @@
-typedef struct no{
-    int valor;
-    struct no *proximo;
-}No;
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
 
-typedef struct{
-    No *prim;
-    No *fim;
-    int tam;
-}Fila;
+typedef struct node{
+	int valor;
+	struct node *prox;
+	// verificar se da erro na linha 7;
+	
+}node;
 
-void criar_fila(Fila *fila){
-    fila->prim = 0;
-    fila->fim = 0;
-    fila->tam = 0;
+typedef struct fila{
+	node *inicio;
+	node *fim;
+}fila;
+
+void inicializaFila(fila *f){
+	f->inicio = NULL;
+	f->fim = NULL;
 }
 
-void inserir_na_fila(Fila *fila, int num){
-    No *aux, *novo = malloc(sizeof(No));
-    if(novo){
-        novo->valor = num;
-        novo->proximo = 0;
-        if(fila->prim == 0){
-            fila->prim = novo;
-            fila->fim = novo;
-        }
-        else{
-            fila->fim->proximo = novo;
-            fila->fim = novo;
-        }
-        fila->tam++;
-    }
-    else
-        printf("\nErro ao alocar memoria.\n");
+
+void enfileira(int valor, fila *f){
+	node *novoNo = (node*) malloc(sizeof(node));
+	if(novoNo == NULL){
+		printf("Erro de alocação.\n");
+		return;
+	}else{
+		novoNo->valor = valor;
+		novoNo->prox = NULL;
+		if(f->inicio == NULL){
+			f->inicio = novoNo;
+		}else{
+			f->fim->prox = novoNo;
+		}
+		
+		f->fim = novoNo;
+		return;
+	}
 }
 
-No* remover_da_fila(Fila *fila){
-    No *remover = 0;
-
-    if(fila->prim){
-        remover = fila->prim;
-        fila->prim = remover->proximo;
-        fila->tam--;
-    }
-    else
-        printf("\tFila vazia\n");
-    return remover;
+int desenfileira(fila *f){
+	node *novoNo = f->inicio;
+	int dado;
+	if(novoNo != NULL){
+		f->inicio = novoNo->prox;
+		novoNo->prox = NULL;
+		dado = novoNo->valor;
+		free(novoNo);
+		if(f->inicio == NULL){
+			f->fim == NULL;
+		}
+		return dado;
+	}else{
+		printf("Não é possivel remover, a fila já está vazia\n");
+		return;
+	}
 }
 
-void imprimir(Fila *fila){
-    No *aux = fila->prim;
-    printf("FILA: \n");
-    while(aux){
-        printf("%d ", aux->valor);
-        aux = aux->proximo;
-        printf("\n");
-    }
-
+void imprimir(fila *f){
+	node *novoNo = f->inicio;
+	if(novoNo != NULL){
+		while(novoNo != NULL){
+			printf("%d ", novoNo->valor);
+			novoNo = novoNo->prox;
+		}
+	}else{
+		printf("Fila Vazia\n");
+		return;
+	}
 }
 
 int main(){
-    No *r;
-    Fila fila;
-    int opcao, valor;
-
-    criar_fila(&fila);
-
-    do{
-        printf("\t0 - Sair\n\t1 - Inserir\n\t2 - Remover\n\t3 - Imprimir\n");
-        scanf("%d", &opcao);
-
-        switch(opcao){
-        case 1:
-            printf("Digite um valor: ");
-            scanf("%d", &valor);
-            inserir_na_fila(&fila, valor);
-            break;
-        case 2:
-            r = remover_da_fila(&fila);
-            if(r){
-                printf("Removido: %d\n", r->valor);
-                free(r);
-            }
-            break;
-        case 3:
-            imprimir(&fila);
-            break;
-        default:
-            if(opcao != 0)
-                printf("\nOpcao invaluda!\n");
-        }
-
-    }while(opcao != 0);
-
-    return 0;
+	fila *f1 = (fila*)malloc(sizeof(fila));
+//	fila f1;
+	
+	inicializaFila(f1);
+	
+	
+	
+	enfileira(10, f1);
+	enfileira(20, f1);
+	enfileira(30, f1);
+	desenfileira(f1);
+	
+	imprimir(f1);
+	
 }
+
+
+
+
+
+
+
+

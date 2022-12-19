@@ -15,7 +15,7 @@ void inicializaPilha(pilha *p){
 	p->topo = NULL;
 }
 
-void empilhar(int *valor, pilha *p){
+void empilhar(int valor, pilha *p){
 	node *novoNo = (node*) malloc(sizeof(node));
 	if(novoNo == NULL){
 		printf("Novo nó não alocado\n");
