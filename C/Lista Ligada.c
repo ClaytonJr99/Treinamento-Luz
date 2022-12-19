@@ -15,8 +15,7 @@ typedef struct lista{
 }lista;
 
 
-node *criarNo(int valor)
-{
+node *criarNo(int valor){
     node *novoNo = (node *)malloc(sizeof(node));
     novoNo->valor = valor;
     novoNo->prox = NULL; 
@@ -26,7 +25,7 @@ node *criarNo(int valor)
 void inserirInicio(int valor, lista *l){
 	node *novoNo = criarNo(valor);
 	
-	if(l->inicio == NULL){  // se a lista estiver vazia
+	if(l->inicio == NULL){
 	
 		l->inicio = novoNo;
 		l->fim = novoNo;
@@ -35,7 +34,6 @@ void inserirInicio(int valor, lista *l){
 		l->inicio = novoNo;
 	}
 	l->tamanho ++;
-	
 }
 
 void inserirFinal(int valor, lista *l){
@@ -50,7 +48,6 @@ void inserirFinal(int valor, lista *l){
 		l->fim = novoNo;
 	}
 	l->tamanho ++;
-	
 }
 
 void removerInicio(lista *l){
@@ -64,7 +61,6 @@ void removerInicio(lista *l){
 		}
 		free(novoNo);
 	}
-	
 }
 
 void removerEspecifico(int valor, lista *l){
@@ -94,9 +90,7 @@ void removerEspecifico(int valor, lista *l){
 			l->fim = noAnterior;
 		}
 		free(noAtual);
-	
 }
-
 
 void imprimir(lista *l){
 	node *novoNo = l->inicio;
@@ -156,7 +150,6 @@ int main(){
 			break;
 			
 		}	
-			
 	}while(opcao != 0);
 	
 }

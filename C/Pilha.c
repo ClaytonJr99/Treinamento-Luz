@@ -58,7 +58,6 @@ int main(){
 	
 	pilha *p1 = (pilha*)malloc(sizeof(pilha));
 	p1->topo = NULL;
-
 	
 	int opcao, numero;
 	do{
@@ -83,8 +82,6 @@ int main(){
 			break;
 		}
 	}while(opcao != 0);
-	
-	
 }
 
 
