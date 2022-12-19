@@ -5,20 +5,13 @@
 typedef struct node{
 	int valor;
 	struct node *prox;
-	// verificar se da erro na linha 7;
-	
+
 }node;
 
 typedef struct fila{
 	node *inicio;
 	node *fim;
 }fila;
-
-void inicializaFila(fila *f){
-	f->inicio = NULL;
-	f->fim = NULL;
-}
-
 
 void enfileira(int valor, fila *f){
 	node *novoNo = (node*) malloc(sizeof(node));
@@ -60,10 +53,12 @@ int desenfileira(fila *f){
 void imprimir(fila *f){
 	node *novoNo = f->inicio;
 	if(novoNo != NULL){
+		printf("\nFila:");
 		while(novoNo != NULL){
 			printf("%d ", novoNo->valor);
 			novoNo = novoNo->prox;
 		}
+		printf("\n");
 	}else{
 		printf("Fila Vazia\n");
 		return;
@@ -72,18 +67,34 @@ void imprimir(fila *f){
 
 int main(){
 	fila *f1 = (fila*)malloc(sizeof(fila));
-//	fila f1;
+	f1->inicio = NULL;
+	f1->fim = NULL;
 	
-	inicializaFila(f1);
+	int opcao, numero;
 	
-	
-	
-	enfileira(10, f1);
-	enfileira(20, f1);
-	enfileira(30, f1);
-	desenfileira(f1);
-	
-	imprimir(f1);
+	do{
+		printf("\ninforme a operacao que deseja realizar\n");
+		printf("1 - Enfileirar\n");
+		printf("2 - Desenfileirar\n");
+		printf("3 - Imprimir\n");
+		printf("0 - Sair\n");
+		scanf("%d", &opcao);
+		
+		switch(opcao){
+			case 1:
+				printf("informe informe o numero para enfileirar\n");
+				scanf("%d", &numero);
+				enfileira(numero, f1);
+				break;
+			case 2:
+				desenfileira(f1);
+				break;
+			case 3: 
+				imprimir(f1);
+			break;
+		}	
+			
+	}while(opcao != 0);
 	
 }
 
