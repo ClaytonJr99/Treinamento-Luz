@@ -54,6 +54,8 @@ void imprimir(pilha *p){
 }
 
 int main(){
+	setlocale(LC_ALL, "Portuguese");
+	
 	pilha *p1 = (pilha*)malloc(sizeof(pilha));
 	p1->topo = NULL;
 

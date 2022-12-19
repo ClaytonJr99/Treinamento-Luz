@@ -66,6 +66,8 @@ void imprimir(fila *f){
 }
 
 int main(){
+	setlocale(LC_ALL, "Portuguese");
+	
 	fila *f1 = (fila*)malloc(sizeof(fila));
 	f1->inicio = NULL;
 	f1->fim = NULL;
