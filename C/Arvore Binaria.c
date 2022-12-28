@@ -48,9 +48,9 @@ node* remover(node *raiz, int valor){
         printf("\nInvalido\n");
         return NULL;
     } else if (valor < raiz->valor) {  
-        raiz->esquerda = remover(raiz->esquerda, valor);  //chama a função recursivamente passando o filho da esquerda sendo a raiz
+        raiz->esquerda = remover(raiz->esquerda, valor);  //chama a função passando o filho da esquerda sendo a raiz
     } else if (valor > raiz->valor) {  
-        raiz->direita = remover(raiz->direita, valor);  //chama a função recursivamente passando o filho da esquerda sendo a raiz
+        raiz->direita = remover(raiz->direita, valor);  //chama a função passando o filho da esquerda sendo a raiz
     } else {  //se o valor for igual ao valor da raiz
         if (raiz->esquerda == NULL && raiz->direita == NULL) {  //se o nó raiz não tiver filhos
             free(raiz);  
