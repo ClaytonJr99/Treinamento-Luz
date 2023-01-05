@@ -1,0 +1,41 @@
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\Aplicacao inicial.csproj.AssemblyReference.cache
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\Aplicacao inicial.csproj.SuggestedBindingRedirects.cache
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\MainWindow.g.cs
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\App.g.cs
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\Aplicacao inicial_MarkupCompile.cache
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\Aplicacao inicial_MarkupCompile.lref
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\Aplicacao inicial.exe.config
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\Aplicacao inicial.exe
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\Aplicacao inicial.pdb
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\MainWindow.baml
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\Aplicacao inicial.g.resources
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\Aplicacao_inicial.Properties.Resources.resources
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\Aplicacao inicial.csproj.GenerateResource.cache
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\Aplicacao inicial.csproj.CoreCompileInputs.cache
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\Aplicacao inicial.exe
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\Aplicacao inicial.pdb
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\CadastroUsuario.g.cs
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\CadastroUsuario.baml
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\BouncyCastle.Crypto.dll
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\Google.Protobuf.dll
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\K4os.Compression.LZ4.dll
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\K4os.Hash.xxHash.dll
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\MySql.Data.dll
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\System.Buffers.dll
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\System.Memory.dll
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\System.Numerics.Vectors.dll
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\ZstdNet.dll
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\BouncyCastle.Crypto.xml
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\Google.Protobuf.pdb
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\Google.Protobuf.xml
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\K4os.Compression.LZ4.xml
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\K4os.Hash.xxHash.xml
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\MySql.Data.xml
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\System.Buffers.xml
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\System.Memory.xml
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\System.Numerics.Vectors.xml
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Users\junin\source\repos\Aplicacao inicial\Aplicacao inicial\obj\Debug\Aplicacao inicial.csproj.CopyComplete
