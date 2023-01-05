@@ -36,7 +36,6 @@ namespace Aplicacao_inicial
                             Name = reader.GetString(1),
                             Email = reader.GetString(2),
                             Password = reader.GetString(3),
-                            CPF= reader.GetString(4),
                         };
                         list.Add(user);
                     }
@@ -56,7 +55,7 @@ namespace Aplicacao_inicial
             {
                 using (MySqlConnection con = GetConnection())
                 {
-                    string query = $@"insert into usuarios(name, email, Password, CPF) values ('{user.Name}', '{user.Email}', '{user.Password}', '{user.CPF}')";
+                    string query = $@"insert into usuarios(name, email, Password) values ('{user.Name}', '{user.Email}', '{user.Password}')";
                     MySqlCommand cmd = new MySqlCommand(query, con);
                     con.Open();
                     cmd.ExecuteNonQuery();

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Aplicacao_inicial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="449" Width="733">
+        Title="MainWindow" Height="449" Width="646">
     <Grid>
         <ListView d:ItemsSource="{d:SampleData ItemCount=5}" ItemsSource="{Binding UsersList}" SelectedItem="{Binding SelectedUser}" Margin="323,0,0,0">
             <ListView.View>

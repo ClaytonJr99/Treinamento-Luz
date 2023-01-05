@@ -58,7 +58,7 @@ namespace Aplicacao_inicial
                     }
                     catch (Exception e)
                     {
-                        MessageBox.Show($"Erro ao incluir um usuário : {e.Message}");
+                        MessageBox.Show($"Erro ao inserir {e.Message}");
                     }
                 }
 
@@ -86,11 +86,10 @@ namespace Aplicacao_inicial
                             SelectedUser.Password = usuario.Password;
 
                             connection.EditUser(SelectedUser);
-                            SelectedUser.Name = usuario.Name;
                         }
                         catch (Exception e)
                         {
-                            MessageBox.Show($"Erro ao editar um usuário : {e.Message}");
+                            MessageBox.Show($"Erro ao editar {e.Message}");
                         }
                     }
                 }
@@ -109,7 +108,7 @@ namespace Aplicacao_inicial
                     }
                     catch (Exception e)
                     {
-                        MessageBox.Show($"Erro ao excluir um usuário : {e.Message}");
+                        MessageBox.Show($"Erro ao excluir {e.Message}");
                     }
                 }
 

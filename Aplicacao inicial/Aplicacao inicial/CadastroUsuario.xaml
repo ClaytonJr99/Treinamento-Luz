@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Aplicacao_inicial"
         mc:Ignorable="d"
-        Title="CadastroUsuario" Height="391" Width="431">
+        Title="CadastroUsuario" Height="326" Width="372">
     <Grid>
         <TextBox HorizontalAlignment="Center" Margin="0,47,0,0" TextWrapping="Wrap" Text="{Binding Name}" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Center" Margin="0,103,0,0" TextWrapping="Wrap" Text="{Binding Email}" VerticalAlignment="Top" Width="120"/>
